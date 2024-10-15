@@ -1,0 +1,38 @@
+.bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 20px;
+    font-size: .8em;
+    color: #5e6077;
+}
+
+.bottom-panel__left-items {
+    width: 105px;
+}
+
+.bottom-panel__filters button{
+    font-size: .8em;
+    border: none;
+    background: none;
+    color: #5e6077;
+    transition: color .4s;
+    cursor: pointer;
+}
+
+.bottom-panel__filters button:hover {
+    color:#fff;
+}
+
+.bottom-panel__filters button.active {
+    color:#4975e2;
+}
+
+.bottom-panel__clear-btn {
+    width:105px;
+    cursor:pointer;
+    transition: color .4s;
+}
+
+.bottom-panel__clear-btn:hover {
+    color:#fff;
+}

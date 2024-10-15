@@ -1,0 +1,46 @@
+.add-todo {
+    position: relative;
+    box-shadow: 0 0 24px rgba(0,0,0,.2);
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+.add-todo input[type="text"]{
+    width: 100%;
+    padding-left: 58px;
+    padding-right: 100px;
+    padding-top: 1.7em;
+    padding-bottom: 1.6em;
+    box-sizing: border-box;
+    border: none;
+    background: #25273c;
+    color:#fff;
+    outline: none;
+}
+
+.add-todo label {
+    position: absolute;
+    left: 0; top:0;
+    height: 100%; width: 60px;
+}
+.add-todo label input[type="checkbox"]{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+
+.add-todo button{
+    position: absolute;
+    right: 0; top:0;
+    height: 100%; width: 84px;
+    border: none;
+    background: #26283f;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+    color: #5f6175;
+    transition: color .4s;
+    cursor: pointer;
+}
+
+.add-todo button:hover{
+    color:#fff;
+}

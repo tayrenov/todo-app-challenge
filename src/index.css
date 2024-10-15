@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'JosefinSans'; /* Имя шрифта, которое будем использовать */
+  src: url('./assets/fonts/JosefinSans-VariableFont_wght.ttf') format('ttf'); /* Путь к шрифту */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSans-bold'; /* Имя шрифта, которое будем использовать */
+  src: url('./assets/fonts/static/JosefinSans-SemiBold.ttf') format('ttf'); /* Путь к шрифту */
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+/* Пример использования шрифта */
+body {
+  font-family: 'JosefinSans', sans-serif;
+  font-size: 18px;
+}

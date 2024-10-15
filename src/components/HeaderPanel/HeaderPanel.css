@@ -1,0 +1,29 @@
+.headerPanel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.headerPanel h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-weight: 700;
+    color:#fff;
+}
+
+.headerPanel button{
+    border: none;
+    background: none;
+    width: 26px; height:26px;
+    cursor: pointer;
+}
+
+
+.dark-theme .headerPanel button{
+    background: url('../../assets/images/icon-sun.svg') center center no-repeat;
+}
+  
+.light-theme .headerPanel button{
+    background: url('../../assets/images/icon-moon.svg') center center no-repeat;
+}

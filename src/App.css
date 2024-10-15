@@ -1,0 +1,110 @@
+.App {
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.app-wrapper.dark-theme {
+  background: rgba(23, 24, 31, 1);
+}
+.app-wrapper.light-theme {
+  background: rgba(250, 250, 250, 1);
+}
+.app-wrapper:before {
+  content: '';
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top:0; left:0;
+  background: linear-gradient(90deg, rgba(56, 249, 255, 1) 0%, rgba(202, 59, 255, 1) 100%);
+}
+
+.app-wrapper.dark-theme:before  {
+  background: url('assets/images/bg-desktop-dark.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.app-wrapper.light-theme:before  {
+  background: url('assets/images/bg-desktop-light.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+
+.app-container {
+  width: 37.5%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/*********/
+
+.app_custom-checkbox  input[type="checkbox"]{
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+.app__custom-checkbox__fake-checkbox {
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__custom-checkbox__fake-checkbox_circle{
+  width: 18px;
+  height: 18px;
+  border-radius: 2em;
+  border: 2px solid #303247;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.app__custom-checkbox__fake-checkbox.checked
+.app__custom-checkbox__fake-checkbox_circle{
+  border: none;
+  background: rgb(132,191,235);
+  background: url("assets/images/icon-check.svg"), linear-gradient(124deg, rgba(132,191,235,1) 0%, rgba(133,150,240,1) 50%, rgba(169,113,248,1) 100%);
+  background-position: 52% 52%;
+  background-repeat: no-repeat;
+}
+
+/******************/
+
+.app__output-panel {
+  background: #25273c;
+  border-radius: .4em;
+  overflow: hidden;
+  box-shadow: 0 0 24px rgba(0,0,0,.2);
+  margin-top: 24px;
+}
+
+.light-theme .app__output-panel {
+  background: #fff;
+}
+.light-theme .add-todo input[type="text"] {
+  background: #fff;
+  color: #47455b;
+}
+
+.light-theme .add-todo button {
+  background: #fff;
+}
+
+.light-theme .todo-item__title{
+  color: #47455b;
+}
+
+.light-theme .bottom-panel__filters button:hover{
+  color:#3a3d50 ;
+}
+
+.light-theme .bottom-panel__clear-btn:hover {
+  color:#3a3d50 ;
+}
